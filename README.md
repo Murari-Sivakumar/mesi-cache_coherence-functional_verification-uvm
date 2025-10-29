@@ -65,8 +65,6 @@ All verification documents are available under [`Report/`](./Report):
 
 ---
 
-## 👤 Author
-
 **Murari Sivakumar**  
 M.S. Computer Engineering — Texas A&M University  
 Focus: *Design Verification and Computer Architecture*  
