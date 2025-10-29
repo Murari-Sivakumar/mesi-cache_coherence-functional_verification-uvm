@@ -6,8 +6,6 @@
 
 # MESI Cache Coherence Verification (UVM)
 
-# MESI Cache Coherence Verification (UVM)
-
 This project implements and verifies a **4-core MESI (Modified, Exclusive, Shared, Invalid)** cache coherence protocol using **SystemVerilog and UVM**.
 
 The goal is to verify cache coherence protocol, eviction & writeback behavior, ensuring data consistency and cache replacement across cores.
