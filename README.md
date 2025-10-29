@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/mesi_uvm_env_diagram.png" width="750" alt="MESI Cache Coherence UVM Environment Diagram">
+</p>
+
 # MESI Cache Coherence Verification (UVM)
 
 This project implements and verifies a **4-core MESI (Modified, Exclusive, Shared, Invalid)** cache coherence protocol using **SystemVerilog and UVM**.
