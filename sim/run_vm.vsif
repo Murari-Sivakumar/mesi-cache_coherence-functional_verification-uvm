@@ -1,0 +1,158 @@
+session multi_core_regress
+{
+	top_dir : $ENV(PWD)/regression/ ;
+	pre_session_script : <text> echo "pre_session_script" </text>;
+};
+
+
+group all_test {
+
+      run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=read_miss_icache" ;
+      scan_script: "vm_scan.pl ius.flt shell.flt" ;
+      count : 1;
+      pre_commands: "";
+      timeout: 13000000;
+      sv_seed: random;
+
+
+
+      test test1 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=read_miss_icache -define TEST1" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test2 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=fill_cache_way -define TEST2" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test3 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=five_trans_test -define TEST3" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test4 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=read_hit_shared -define TEST4" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test5 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=read_miss_dcache -define TEST5" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test6 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=modified_to_shared -define TEST6" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+
+      test test7 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=sequential_rw_dcache -define TEST7" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test8 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=write_hit_me_dcache -define TEST8" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test9 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=write_hit_shared_pass -define TEST9" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test10 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=write_hit_shared -define TEST10" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test11 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=cover_mesi_transistions -define TEST11" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test12 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=cover_mesi_lru_random_read -define TEST12" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test13 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=cover_mesi_lru_eviction -define TEST13" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test14 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=cover_mesi_lru_shared_conflict -define TEST14" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test15 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=mesi_downgrade -define TEST15" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test16 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=mesi_shared_invalidation -define TEST16" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test17 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=fill_cache_way_all_core -define TEST17" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test18 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=lv2_lru_replacement_test -define TEST18" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test19 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=lv2_read_hit -define TEST19" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test20 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=fill_cache_set_il -define TEST20" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test21 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=write_hit_lv2_eviction -define TEST21" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test22 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=multicore_stress_test -define TEST22" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+      test test23 {
+      	   run_script: "cd $ENV(PWD) ; xrun -f run_vm.f +UVM_TESTNAME=random_stress -define TEST23" ;
+           scan_script: "vm_scan.pl ius.flt shell.flt" ;
+	   count : 1;
+      };
+
+};
