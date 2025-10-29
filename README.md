@@ -1,6 +1,10 @@
 <p align="center">
-  <img src="docs/mesi_uvm_env_diagram.png" width="750" alt="MESI Cache Coherence UVM Environment Diagram">
+  <img src="docs/uvm_tb.jpg" width="750" alt="MESI Cache Coherence UVM Environment Diagram">
+  <br>
+  <em>Figure: UVM Testbench Architecture for 4-Core MESI Cache Coherence Verification</em>
 </p>
+
+# MESI Cache Coherence Verification (UVM)
 
 # MESI Cache Coherence Verification (UVM)
 
