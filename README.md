@@ -51,8 +51,8 @@ This repository contains:
 
 All verification documents are available under [`Report/`](./Report):
 
-- **Bug Report (PDF)** — Detailed description of detected ICACHE and L2 coherence bugs  
-- **Coverage Report (PDF)** — Functional coverage analysis and closure summary  
+- **Coverage Report (PDF)** — Functional coverage analysis and closure summary 
+- **Bug Report (PDF)** — Detailed description of detected ICACHE and L2 coherence bugs   
 - **Regression Report (PDF)** — Pass/fail log of all regression runs  
 
 ---
