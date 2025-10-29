@@ -2,7 +2,7 @@
 
 This project implements and verifies a **4-core MESI (Modified, Exclusive, Shared, Invalid)** cache coherence protocol using **SystemVerilog and UVM**.
 
-The focus is on verifying cache transactions, eviction/writeback behavior, and ensuring data consistency across cores.
+The goal is to verify cache coherence protocol, eviction & writeback behavior, ensuring data consistency across cores.
 
 ---
 
