@@ -72,8 +72,3 @@ M.S. Computer Engineering — Texas A&M University
 Focus: *Design Verification and Computer Architecture*  
 📧 [ms8716@tamu.edu](mailto:ms8716@tamu.edu)  
 🔗 [LinkedIn](https://www.linkedin.com/in/murarisivakumar/)
-
-
-🔗 LinkedIn
-(https://www.linkedin.com/in/murarisivakumar/).
-.
