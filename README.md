@@ -58,26 +58,21 @@ All verification documents are available under [`Report/`](./Report):
 
 ---
 
-## ⚙️ Simulation
+## 🧰 Tools & Methodology
 
-```bash
-cd sim
-make run TEST=icache_read_miss_test
+**Languages:** SystemVerilog, UVM, Object-Oriented Programming  
+**Simulator:** Cadence Xcelium, IMC, vManager
 
+---
 
-🧰 Tools & Methodology
+## 👤 Author
 
-Languages: SystemVerilog, UVM, Object-Oriented Programming
-Simulator: Cadence Xcelium, IMC, vManager
+**Murari Sivakumar**  
+M.S. Computer Engineering — Texas A&M University  
+Focus: *Design Verification and Computer Architecture*  
+📧 [ms8716@tamu.edu](mailto:ms8716@tamu.edu)  
+🔗 [LinkedIn](https://www.linkedin.com/in/murarisivakumar/)
 
-
-
-👤 Author
-
-Murari Sivakumar
-M.S. Computer Engineering — Texas A&M University
-Focus: Design Verification and Computer Architecture
-📧 ms8716@tamu.edu
 
 🔗 LinkedIn
 (https://www.linkedin.com/in/murarisivakumar/).
